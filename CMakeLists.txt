@@ -4,6 +4,10 @@ project(Project LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+
 set(APP_NAME ${PROJECT_NAME})
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
@@ -11,7 +15,10 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 qt_standard_project_setup()
 
 set(SOURCES
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
+    src/main.cpp
+    src/calculatorform.cpp
+    src/calculatorform.hpp
+    src/mainwindow.ui
 )
 
 message(STATUS "source: ${CMAKE_CURRENT_SOURCE_DIR}")
