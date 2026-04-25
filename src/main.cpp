@@ -5,6 +5,7 @@
 #include <QTranslator>
 
 #include "calculatorform.hpp"
+#include "textfinder.hpp"
 
 int main(int argc, char* argv[])
 {
@@ -24,9 +25,11 @@ int main(int argc, char* argv[])
     // parser.addPositionalArgument("File"_L1, Tr::tr("positional argument"));
     // parser.process(app);
 
-    CalculatorForm calculatorform { nullptr };
+    // CalculatorForm calculatorform { nullptr };
+    // calculatorform.show();
 
-    calculatorform.show();
+    TextFinder textFinder;
+    textFinder.show();
 
     return app.exec();
 }
