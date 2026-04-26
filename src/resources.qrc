@@ -1,6 +1,8 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
     <file>forms/textfinder.ui</file>
+    <file>forms/songlist.ui</file>
     <file>forms/input.txt</file>
+    <file>forms/Darkeum/Darkeum.qss</file>
 </qresource>
 </RCC>

@@ -16,10 +16,10 @@ qt_standard_project_setup()
 
 set(SOURCES
     src/main.cpp
-    # src/calculatorform.cpp
-    # src/calculatorform.hpp
-    src/textfinder.cpp
-    src/textfinder.hpp
+    # src/textfinder.cpp
+    # src/textfinder.hpp
+    src/songlist.cpp
+    src/songlist.hpp
     src/mainwindow.ui
 )
 
@@ -46,6 +46,10 @@ target_link_libraries(${APP_NAME} PRIVATE
 set(text_finder_resource_files
     "forms/input.txt"
     "forms/textfinder.ui"
+    "forms/songlist.ui"
+    "forms/Darkeum/Darkeum.qss"
+    "forms/Combinear/Combinear.qss"
+    "forms/Takezo/Takezo.qss"
 )
 
 qt6_add_resources(${APP_NAME} "textfinder"
