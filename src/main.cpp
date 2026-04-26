@@ -14,9 +14,9 @@ int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
     // QApplication::setStyle(QStyleFactory::create("Fusion"));
-    // QFile file(u":/forms/Darkeum/Darkeum.qss"_s);
+    QFile file(u":/forms/Darkeum/Darkeum.qss"_s);
     // QFile file(u"forms/Combinear/Combinear.qss"_s);
-    QFile file(u"forms/Takezo/Takezo.qss"_s);
+    // QFile file(u"forms/Takezo/Takezo.qss"_s);
     if (!file.open(QIODevice::ReadOnly))
         qFatal("Cannot open resource file");
     app.setStyleSheet(QTextStream(&file).readAll());
